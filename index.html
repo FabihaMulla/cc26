@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Item Tracker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <span class="brand">Item Tracker</span>
+      <span class="course">Cloud Computing Fundamentals, Lab 03</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>Keep track of your items</h1>
+      <p>Type a name, press Add, and it appears in the list below.</p>
+    </section>
+
+    <section class="panel">
+      <label for="name" class="field-label">New item</label>
+      <div class="add-row">
+        <input id="name" placeholder="New item name" autocomplete="off">
+        <button id="add" type="button">Add</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="list-head">
+        <h2>Items</h2>
+        <span id="count" class="count">0 items</span>
+      </div>
+      <ul id="list">
+        <li class="empty">No items yet. Add your first item above.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
